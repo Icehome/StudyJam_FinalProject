@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#FFF9C4"
+    android:orientation="vertical"
+    tools:context="com.studyjame.finalprojectforstudyjam.finalproject.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Клуб День Народження"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#44b1ff"
+        android:textSize="26sp"
+        android:textStyle="normal|bold|italic"
+        android:layout_gravity="center_horizontal"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/androidparty"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/btn_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Про нас"
+        android:textColor="#FFF9C4"
+        android:background="#44b1ff"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"/>
+    <Button
+        android:id="@+id/btn_call_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="зателефонуй нам"
+        android:textColor="#FFF9C4"
+        android:background="#44b1ff"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"/>
+    <Button
+        android:id="@+id/btn_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ми на карті"
+        android:textColor="#FFF9C4"
+        android:background="#44b1ff"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"/>
+    <Button
+        android:id="@+id/btn_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="#FFF9C4"
+        android:background="#44b1ff"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"/>
+    <Button
+        android:id="@+id/btn_push_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Нажми мене ;)"
+        android:textColor="#FFF9C4"
+        android:background="#44b1ff"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"/>
+
+
+</LinearLayout>
+</ScrollView>
