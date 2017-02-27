@@ -47,11 +47,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.btn_email:
-                Intent emailIntent = getPackageManager().getLaunchIntentForPackage("com.android.email");
-                emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[] {"icehome.ck@gmail.com"});
-                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Ваше питання");
-                emailIntent.putExtra(Intent.EXTRA_TEXT, "Суть вашого звернення чи питання...");
-                startActivity(emailIntent);
+                intent = new Intent(Intent.ACTION_SEND);
+                intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"icehome.ck@gmail.com"});
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Тема Вашого листа...");
+                intent.putExtra(Intent.EXTRA_TEXT, "Опишіть суть вашого звернення. Дякую :)");
+                intent.setType("message/rtc822");
+                startActivity(intent);
                 break;
         }
 
